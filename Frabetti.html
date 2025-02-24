@@ -1,0 +1,707 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <!--
+<link rel="stylesheet" type="text/css" href="../css/issStyle1.css">
+<script type="text/javascript" src="../css/issStyle.js"></script>
+-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js"crossorigin="anonymous"></script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./commons/resources/styles/templateISS.css">
+        <link rel="stylesheet" type="text/css" href="./commons/resources/styles/main.css">
+        <link rel="stylesheet" type="text/css" href="./commons/resources/styles/navbar.css">
+        <link rel="stylesheet" type="text/css" href="./commons/resources/styles/table.css">
+        <link rel="stylesheet" type="text/css" href="./commons/resources/styles/code.css">
+        <!-- <script type="text/javascript" src="./commons/resources/scripts/myScripts.js"></script> -->
+<style type="text/css">
+body
+{
+    margin-left:  30px;
+    margin-right: 30px;
+};
+
+P
+{
+    font-family: Tahoma;
+    font-size: 10pt;
+};
+
+a, a:visited, a:active, a:link, a:hover {
+    text-decoration: underline;
+    color: #545454;
+    background-color: transparent;
+	font-size: 93%;
+}
+
+a:hover {
+    background-color: #cccccc;
+}
+
+
+hr {
+    clear: both;
+    height: 1px;
+    color: #242424;
+    background-color: transparent;
+}
+
+h1, h2, h3 {
+    color: #242424;
+    clear: left;
+    font: 100% Tahoma, Helvetica, Arial, sans-serif;
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+top {
+	width: 100%;
+}
+
+
+#i {
+    color: #ff1010;
+}
+tt{
+	font-family: "Arial";
+    font-size: 90%;
+	color: #006600;
+}
+em{
+	font-family: "Arial";
+    font-size: 80%;
+	font-weight: bold;
+	border-style:solid;
+	border-color: #abe876;
+    color: #1632cc;
+}
+bc{
+	font-family: "Arial";
+	font-size: 90%;
+	font-weight: bold;
+    color: #990000;
+	background-color: #fcf8c7;
+}
+ks{
+	font-family: "Arial";
+	font-weight: bold;
+    color: #0000CD	;
+	font-size: 90%;
+}
+kc{
+	font-family: "Arial";
+	font-weight: bold;
+    color: #008000	;
+	font-size: 90%;
+}
+pre{
+	font-family: "Consolas";
+	font-size: 85%;
+	background-color: #f5f5f5;
+	border: 1.5px solid silver;
+	padding: 5px;
+}
+m{
+	font-family: "Helvetica";
+	line-height: 100%;
+ 	font-size: 75%;
+}
+div.body{
+	 
+    font-size: 18px;
+}
+k{
+    color: #990000;
+	font-weight: bold;
+	font-size: 90%;
+}
+h1 {
+    font-size: 150%;
+    background-color: #b2c0ff;
+	padding: 10px;
+}
+
+h2 {
+    background-color: #9ed8ff;
+    font-size: 130%;
+}
+
+h3 {
+	background-color: #e6ccff;
+    font-size: 100%;
+}
+h4 {
+    background-color: #ccffcc;
+    font-size: 100%;
+	width: 95%;
+	border-radius: 5px;
+	padding: 2px;
+}
+h5 {
+    background-color: #d5ffb0;
+    font-size: 100%;
+
+}
+div.req{
+	background-color: #d9ffb3;
+    font-size: 18px;
+	width: 700px;
+    border: 3px solid green;
+    padding: 15px;
+    margin: 10px;
+}
+div.remark{
+	background-color: #E3F2FD;
+    border: 1.5px solid #d5f2ed;
+    padding: 15px;
+    margin: 10px;
+	border-radius: 25px;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+ol, ul, li {
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  padding-bottom: 5px;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+img {
+	border: 1.5px solid #d5f2ed
+
+}
+
+a, a:visited, a:active, a:link, a:hover {
+    text-decoration: underline;
+    color: #545454;
+    background-color: transparent;
+}
+
+div.wrapdesc{
+	width: 90%;
+	margin: auto;
+}
+
+div.imagedesc{
+	width: 85%;
+	margin: auto;
+}
+</style>
+    
+ 
+   
+</head>
+	
+		
+  
+
+
+   
+<title>TemplateToFill</title></head>
+    
+<!--
+	<body onload="loadNav();">
+		<div id="openButton" class="openButton" onclick="openNav(true)">&#9776; Menu</div>
+		<div id="sidenav" class="sidenav">
+			<a class="closeButton" href="javascript:void(0)" onclick="closeNav(true)">&times;</a>
+			<a href=".README.html">ReadMe</a>
+			<a class="sprint" href="../../../Sprint0/Codice/userDocs/Cold%20Storage%20Service%20-%20Natali%20V3.html">Sprint0</a>
+			<a class="sprint" href="../../../Sprint1.0/Codice/userDocs/Sprint%201.0%20-%20V3.html">Sprint1.0</a>
+			<a class="sprint" href="../../../Sprint1.1/Codice/userDocs/Sprint%201.1%20-%20V3.html">Sprint1.1</a>
+			<a id="currentSprint" class="sprint" href="#">&#8211;&#8212; Sprint2 &#8212;&#8211;</a>
+			<div class="sidenavSection">
+				<a href="#Goal Sprint 2">Goal Sprint 2</a>
+				<a href="#Requisiti">Requisiti</a>
+				<a href="#Analisi dei Requisiti">Analisi dei Requisiti</a>
+				<a href="#Analisi del Problema">Analisi del Problema</a>
+				<a href="#Test Plan">Test Plan</a>
+				<a href="#Progettazione">Progettazione</a>
+				<a href="#Deployment">Deployment</a>
+			</div>
+			<p class="separator">&mdash;&mdash;&mdash;&ndash;&ndash;&mdash;&mdash;&mdash;</p>
+			<a class="sprint" href="../../../Sprint3/Codice/userDoc/Sprint%203.html">Sprint3</a>
+			<bottom-spacer/>
+		</div>
+-->
+<body>
+<div id="top">
+<h1>LABORATORIO DI INGEGNERIA DEI SISTEMI SOFTWARE <font size="5"></font> </h1>
+</div>  
+
+<div class="body"> 
+<h2>Introduction</h2>
+ 
+ 
+<h2>Requirements</h2>
+
+ 
+<div>
+	<li>Progetto conwaygui: realizzazione di una pagina HTML che funga da dispostivo di input-ouput evoluto per l’applicazione ConwayLife25 in Java.</li>
+	<li>La pagina HTML svolge il ruolo di:
+    <li>un dispositivo di input, in quanto permette a un utente umano di settare lo stato iniziale delle celle e di inviare comandi di gestione dell’applicazione con i pulsanti start/stop/exit.</li>
+    <li>un dispositivo di output, in quanto permette di visualizzare lo stato della griglia</li>
+    <li>I files relativi alla sua realizazione sono:</li>
+    <li>guipage.html: pagina HTML</li>
+    <li>WSConwayguiLifeMqtt: gestione delle WebSocket lato server</li>
+    <li>iomap.js: mappa con le celle</li>
+    <li>commsocket.js: gestione della WebSocket lato client</li>
+</div>
+
+ 
+
+<h2>Requirement analysis</h2>
+<div>
+    <li>Analizzando i requisiti posso individuare diversi requisiti funzionali e non:</li>
+    <h4>funzionali:</h4>
+    <li>bottone start</li>
+    <li>bottone stop</li>
+    <li>bottone exit</li>
+    <li>possibilità di configurazione iniziale</li>
+    <li>rappresentazione visiva (tramite iomap.js)</li>
+    <li>comunicazione client-server (tramite websocket.js)</li>
+    <h4>non funzionali:</h4>
+    <li>velocità del sistema: non vogliamo che il sistema sia troppo lento per una corretta visualizzazione oppure sia troppo lento nella comunicazione tramite websocket</li>
+    <li>coerenza dati Model-View: vogliamo che ci sia coerenza dati tra model e view</li>
+    <li>UX intuitiva: vogliamo che la UX sia abbastanza intuitiva da permettere l'interazione senza necessità di documentazione</li>
+</div>
+
+<h2>Problem analysis</h2>
+<p>Qua di seguito l'analisi del problema secondo il modello simil-RUP illustrato in ingegneria del software T (ridotto)</p>
+
+<h3>Analisi delle funzionalità</h3>
+
+<h4>Tabella funzionalità:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Funzionalità</th>
+      <th>Tipo</th>
+      <th>Grado complessità</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Start</td>
+      <td>interazione con l'esterno</td>
+      <td>semplice</td>
+    </tr>
+    <tr>
+      <td>Stop</td>
+      <td>interazione con l'esterno</td>
+      <td>semplice</td>
+    </tr>
+    <tr>
+      <td>Exit</td>
+      <td>interazione con l'esterno</td>
+      <td>semplice</td>
+    </tr>
+    <tr>
+      <td>Stato iniziale</td>
+      <td>interazione con l'esterno,<br>manipolazione dei dati</td>
+      <td>medio</td>
+    </tr>
+    <tr>
+      <td>Rappresentazione visiva</td>
+      <td>interazione con l'esterno</td>
+      <td>semplice</td>
+    </tr>
+    <tr>
+      <td>comunicazione client-server</td>
+      <td>sincronizzazione</td>
+      <td>medio</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Tabella informazioni/flusso:</h4>
+
+<h5>Start:</h5>
+<table>
+  <thead>
+    <tr>
+      <th>Informazione</th>
+      <th>Tipo</th>
+      <th>Livello privacy</th>
+      <th>I/O</th>
+      <th>Vincoli</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>game on</td>
+      <td>semplice</td>
+      <td>nessuno</td>
+      <td>Input e Output</td>
+      <td>true, false</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5>Stop:</h5>
+<table>
+  <thead>
+    <tr>
+      <th>Informazione</th>
+      <th>Tipo</th>
+      <th>Livello privacy</th>
+      <th>I/O</th>
+      <th>Vincoli</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>game on</td>
+      <td>semplice</td>
+      <td>nessuno</td>
+      <td>Input e Output</td>
+      <td>true, false</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5>Exit:</h5>
+<p>(none)</p>
+
+<h5>Stato iniziale:</h5>
+<table>
+  <thead>
+    <tr>
+      <th>Informazione</th>
+      <th>Tipo</th>
+      <th>Livello privacy</th>
+      <th>I/O</th>
+      <th>Vincoli</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>stato cella</td>
+      <td>semplice</td>
+      <td>nessuno</td>
+      <td>Input e Output</td>
+      <td>true, false</td>
+    </tr>
+    <tr>
+      <td>stato iniziale</td>
+      <td>composto</td>
+      <td>nessuno</td>
+      <td>Input</td>
+      <td>stessa dim modello</td>
+    </tr>
+    <tr>
+      <td>stato corrente</td>
+      <td>composto</td>
+      <td>nessuno</td>
+      <td>Output</td>
+      <td>stessa dim modello</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5>Stato corrente:</h5>
+<table>
+  <thead>
+    <tr>
+      <th>Informazione</th>
+      <th>Tipo</th>
+      <th>Livello privacy</th>
+      <th>I/O</th>
+      <th>Vincoli</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>stato cella</td>
+      <td>semplice</td>
+      <td>nessuno</td>
+      <td>Input e Output</td>
+      <td>true, false</td>
+    </tr>
+    <tr>
+      <td>stato iniziale</td>
+      <td>composto</td>
+      <td>nessuno</td>
+      <td>Input</td>
+      <td>stessa dim modello</td>
+    </tr>
+    <tr>
+      <td>stato corrente</td>
+      <td>composto</td>
+      <td>nessuno</td>
+      <td>Output</td>
+      <td>stessa dim modello</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5>Sincronizzazione:</h5>
+<table>
+  <thead>
+    <tr>
+      <th>Informazione</th>
+      <th>Tipo</th>
+      <th>Livello privacy</th>
+      <th>I/O</th>
+      <th>Vincoli</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>stato cella</td>
+      <td>semplice</td>
+      <td>nessuno</td>
+      <td>Input e Output</td>
+      <td>true, false</td>
+    </tr>
+    <tr>
+      <td>stato iniziale</td>
+      <td>composto</td>
+      <td>nessuno</td>
+      <td>Input</td>
+      <td>stessa dim modello</td>
+    </tr>
+    <tr>
+      <td>stato corrente</td>
+      <td>composto</td>
+      <td>nessuno</td>
+      <td>Output</td>
+      <td>stessa dim modello</td>
+    </tr>
+    <tr>
+      <td>game on</td>
+      <td>semplice</td>
+      <td>nessuno</td>
+      <td>Input e Output</td>
+      <td>true, false</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Analisi dei vincoli</h3>
+
+<h4>Tabella vincoli:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Requisito</th>
+      <th>Categorie</th>
+      <th>Impatto</th>
+      <th>Funzionalità</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Velocità</td>
+      <td>Tempo di risposta</td>
+      <td>Aumenta la complessità, <br>aumentano il tempo di risposta</td>
+      <td>stato corrente</td>
+    </tr>
+    <tr>
+      <td>UX intuitiva</td>
+      <td>Usabilità</td>
+      <td>Migliora l'usabilità</td>
+      <td>Start, stop, exit, stato iniziale, stato corrente</td>
+    </tr>
+    <tr>
+      <td>Coerenza dati M-V</td>
+      <td>Coerenza dati</td>
+      <td>evita errori di render</td>
+      <td>stato corrente</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Analisi documento requisiti</h3>
+
+<h4>Tabella maschere:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Maschera</th>
+      <th>Informazioni</th>
+      <th>Funzionalità</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GOL GUI</td>
+      <td>pagina con GUI</td>
+      <td>pagina interattiva con le funzionalità richieste:<br>
+          - bottone start<br>
+          - bottone stop<br>
+          - bottone exit<br>
+          - celle interattive
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Analisi ruoli e responsabilità</h3>
+
+<h4>Tabella ruoli:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>ruolo</th>
+      <th>responsabilità</th>
+      <th>maschere</th>
+      <th>riservatezza</th>
+      <th>numerosità</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>utente</td>
+      <td>nessuna</td>
+      <td>GOL GUI</td>
+      <td>nessuna</td>
+      <td>1 alla volta</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Tabella ruolo-informazione utente:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>informazione</th>
+      <th>tipo accesso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>game on</td>
+      <td>lettura/scrittura</td>
+    </tr>
+    <tr>
+      <td>stato cella</td>
+      <td>lettura/scrittura</td>
+    </tr>
+    <tr>
+      <td>stato iniziale</td>
+      <td>scrittura</td>
+    </tr>
+    <tr>
+      <td>stato corrente</td>
+      <td>lettura</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Scomposizione del problema</h3>
+
+<h4>Tabella scomposizione funzionalità:</h4>
+<table>
+  <thead>
+    <tr>
+      <th>funzionalità</th>
+      <th>scomposizione</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rappresentazione visiva</td>
+      <td>Visualizzazione griglia,<br>Update griglia</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sotto-funzionalità</th>
+      <th>Sotto-funzionalità</th>
+      <th>Legame</th>
+      <th>Informazioni</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Visualizzazione griglia</td>
+      <td>Update griglia</td>
+      <td>Visualizzazione griglia dipende da Update griglia</td>
+      <td>stato cella, stato corrente, stato iniziale</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Modello del dominio</h3>
+
+<h4>Pseudo-Uml:</h4>
+<p><img src="./img/Pasted%20image%2020250224151943.png" alt="Pseudo-Uml"></p>
+
+<h4>Interazione</h4>
+<ul>
+  <li>diagrammi di sequenza</li>
+</ul>
+
+<h4>Comportamento</h4>
+<ul>
+  <li>diagrammi di stato e attività</li>
+</ul>
+
+<h3>Piano di lavoro</h3>
+<p>Il piano di lavoro proposto consiste nel procedere nella seguente maniera</p>
+<ul>
+  <li>realizzazione interfacce per GUI html</li>
+  <li>realizzazione interfacce per iomap.js</li>
+  <li>realizzazione interfacce per websocket.js</li>
+  <li>realizzazione di GUI html</li>
+  <li>realizzazione iomap.js</li>
+  <li>realizzazione di websocket.js</li>
+  <li>testing singolo interazione tra componenti</li>
+  <li>debug</li>
+</ul>
+
+
+<p>Basandomi sulle esperienze del team (me) e dai precedenti lavori posso stimare(worst case):</p>
+<ul>
+  <li>realizzazione interfacce per GUI html: 10 min</li>
+  <li>realizzazione interfacce per iomap.js: 10 min</li>
+  <li>realizzazione interfacce per websocket.js: 10 min</li>
+  <li>realizzazione di GUI html: 1h</li>
+  <li>realizzazione iomap.js: 2h</li>
+  <li>realizzazione di websocket.js: 1h</li>
+  <li>testing singolo interazione tra componenti:1h</li>
+  <li>debug:2h</li>
+</ul>
+Considerando queste tempistiche individuali dividerei il lavoro in blocchi da 1.30h, 2h, 2h per un totale di 5.30h totali e uno scarto di 1h (circa 20%) extra per eventuali errori e margini.
+
+<h2>Test plans</h2> 
+
+
+<h2>Project</h2> 
+ 
+ 
+
+<h2>Testing</h2> 
+ 
+
+<h2>Deployment</h2> 
+
+ 
+<h2>Maintenance</h2> 
+
+<h2>Other(chatGPT chat)</h2> 
+<div>
+	di seguito il link della chat richiesta nella precedente lezione:
+	https://chatgpt.com/share/67b753dd-d554-800a-9410-9789e9f8ee4f
+</div>
+
+<div style="background-color:rgba(86, 56, 253, 0.9); width:60%;text-align:left;color:white">
+By Frabetti Roberto email: roberto.frabetti@studio.unibo.it, 
+<!-- <img src="./img/mbot-S.jpg" alt="mbot" width="15%" height="15%"> -->
+<img src="./img/emiglio.png" alt="Frabetti" width="15%" height="15%">
+GIT repo: https://github.com/frabetti72/Ing-Sist-Soft-M
+</div> 
+</body>
+</html>
