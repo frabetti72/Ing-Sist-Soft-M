@@ -15,6 +15,7 @@ Qua di seguito l'analisi del problema
 | Stato iniziale              | interazione con l'esterno,<br>manipolazione dei dati | medio             |
 | Rappresentazione visiva     | interazione con l'esterno                            | semplice          |
 | comunicazione client-server | sincronizzazione                                     | medio             |
+| realizzazione cella         | manipolazione dati                                   | semplice          |
 #### Tabella informazioni/flusso:
 
 ##### Start:
@@ -46,6 +47,11 @@ Qua di seguito l'analisi del problema
 | stato iniziale | composto | nessuno         | Input          | stessa dim modello |
 | stato corrente | composto | nessuno         | Output         | stessa dim modello |
 | game on        | semplice | nessuno         | Input e Output | true, false        |
+##### Stop:
+| Informazione | Tipo     | Livello privacy | I/O            | Vincoli     |
+| ------------ | -------- | --------------- | -------------- | ----------- |
+| stato cella  | semplice | nessuno         | Input e Output | true, false |
+
 ### Analisi dei vincoli
 
 #### Tabella vincoli:
@@ -77,6 +83,7 @@ Qua di seguito l'analisi del problema
 | stato cella    | lettura/scrittura |
 | stato iniziale | scrittura         |
 | stato corrente | lettura           |
+| stato cella    | lettura/scrittura |
 ### Scomposizione del problema
 
 #### tabella scomposizione funzionalità:
@@ -92,8 +99,8 @@ Qua di seguito l'analisi del problema
 
 ### Modello del dominio
 
-#### Pseudo-Uml:
-![[Pasted image 20250224151943.png]]
+#### Pseudo-UML:
+![[PseudoUml_02.png]]
 <h3>Piano di lavoro</h3>
 
 <p>Il piano di lavoro proposto consiste nel procedere nella seguente maniera</p>
